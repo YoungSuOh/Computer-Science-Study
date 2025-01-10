@@ -24,6 +24,7 @@
 
 ### 프로세스 상태
 
+![image](https://github.com/user-attachments/assets/75c1ad4a-1f5d-4e68-bc24-e2a44324586a)
 
 1. **승인 (Admitted)** 
     1. 프로세스 생성이 가능하여 승인됨.
@@ -65,8 +66,8 @@
             1. 예시
                 1. **큐 1**: 인터랙티브 프로세스 (시간 민감 작업)
                 2. **큐 2**: 배치 프로세스 (시간 민감하지 않은 작업)
-
-        
+         ![image (1)](https://github.com/user-attachments/assets/8c3b7634-8861-44f4-be92-c748bb6ea880)
+         ![image (2)](https://github.com/user-attachments/assets/d3311904-ca94-4606-bd15-6535b29c3dcd)
         - 우선순위가 낮은 큐들이 실행 못하는 걸 방지하고자 각 큐마다 다른 `Time Quantum` (시간 할당량)을 설정 해주는 방식 사용
             - Time Quantum이란?
                 - CPU가 각 큐에 할당하는 **시간의 크기**를 말함.
@@ -74,8 +75,7 @@
         - 우선순위가 높은 큐는 작은 `Time Quantum` 할당. 우선순위가 낮은 큐는 큰 `Time Quantum` 할당.
         - 따라서 각 큐가 교대로 CPU를 사용하며, 우선순위와 Time Quantum에 따라 공정하게 자원이 배분됨
     4. Multilevel-Feedback-Queue (다단계 피드백 큐)   
-
-
+    ![image (3)](https://github.com/user-attachments/assets/8a0161f2-1355-4165-8436-88a7fbd44d9f)
         1. CPU 스케줄링 알고리즘 중 하나로, 프로세스가 **실행 중에 우선순위가 동적으로 변경**될 수 있는 방식이다.
         2. **Multilevel Queue**와 달리, **프로세스가 큐 간에 이동**하면서 작업 특성과 실행 시간에 맞게 CPU를 공정하게 배분할 수 있다.
         3. 기본 원리
