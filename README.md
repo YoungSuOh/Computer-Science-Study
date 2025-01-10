@@ -63,7 +63,7 @@
       <td>Computer Science</td>
       <td>C & C++</td>
       <td><code>미진행</code></td>
-      <td><code>01.10 ~ ing</code></td>
+      <td><code>-</code></td>
     </tr>
     <tr>
       <td>Computer Science</td>
