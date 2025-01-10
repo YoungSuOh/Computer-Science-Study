@@ -1,6 +1,7 @@
 # CPU
 
 ## CPU 주요 구조
+![다운로드](https://github.com/user-attachments/assets/6e903230-756d-47b3-82a7-ed0bbd1f16c7)
 
 1. **제어 장치(Control Unit, CU)**
     - 프로세스 실행의 **중앙 관리자** 역할을 함.
