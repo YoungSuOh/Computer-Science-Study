@@ -38,7 +38,8 @@
     ```
     
     - 결과
-    
+    - ![image](https://github.com/user-attachments/assets/03bd7fb6-2ef5-4c18-a891-ada3ec6b0267)
+
     
     - `main` 함수 실행 → 최초의 부모 프로세스 (`5960`) 생성
     - fork() 함수가 여러 번 호출되면서 프로세스가 동시에 실행될 때, 각각의 프로세스가 어떤 순서로 CPU를 할당 받을지 운영체제 스케줄러가 결정한다
@@ -55,7 +56,8 @@
         ```
         
 
-- 실행 중인 프로그램
+- 실행 중인 프로그램  
+  ![image (1)](https://github.com/user-attachments/assets/cbd9266b-9a25-4ba4-9f62-95527cc37114)
 
 
 
@@ -63,6 +65,7 @@
 - 프로세스는 함수의 매개 변수, 복귀 주소, 로컬 변수와 같은 임시 자료를 갖는 프로세스 스택과 전역 변수들을 수록하는 데이터 섹션을 포함한다.
 
 ### 프로세스 제어 블록(PCB) - Process Control Block
+![image (2)](https://github.com/user-attachments/assets/69061f21-0bc2-4e7a-82a8-c50bd5f663a3)
 
 
 
@@ -131,7 +134,8 @@
     ```
     
     - 결과
-        
+    - ![image (3)](https://github.com/user-attachments/assets/2371681f-047f-474b-926d-0cdd180ff716)
+
        
         
     - `std::lock_guard<std::mutex> lock(mtx);` 덕분에 여러 쓰레드가 동시에 같은 `std::cout`에 접근하지 못하도록 막고 있다.
