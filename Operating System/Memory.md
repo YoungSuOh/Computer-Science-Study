@@ -30,6 +30,7 @@
 프로세스는 독립적인 메모리 공간을 가져야 하고, 자신의 공간만 접근해야 함
 
 따라서 한 프로세스에게 합법적인 주소 영역을 설정하고, 잘못된 접근이 오면 `trap` 을 발생시키며 보호함
+![image](https://github.com/user-attachments/assets/865555f8-489d-451a-8148-a7d7e3066ee7)
 
 
 
@@ -172,14 +173,16 @@ for(int i = 0; i < 10; i++){
 - Allocate vs No-Allocate
     - Cache-Miss가 발생했을 때의 정책이다.
     1. Allocate : 디스크 또는 메모리에서 가져와서 cache에 올려놓고 cache에 있는지 write
-        
+        ![image (1)](https://github.com/user-attachments/assets/43890411-7702-4b9e-a888-fd69dccaf41b)
+
         
         
         1. Allocate는 Cache Miss시, Main memory의 블록을 Cache Memory에 할당해 Cache Memory에 Write하는 방식
         2. Cache Memory에 접근했을 때, 원하는 주소가 없었으니까 Main Memory의 해당 블록을 Cache Memory로 로드하여 Cache를 갱신하고 Cache Memory에 Write를 하겠다는 뜻
         3. 이름 그대로 Cache를 새로 할당(Allocate)해주는 것
     2. No-Allocate : 어차피 miss라 cache안에 없으니깐 메모리 또는 디스크에서 가져옴
-        
+        ![image (2)](https://github.com/user-attachments/assets/89a3fa39-45bd-4b9c-9b5a-7205c624f155)
+
         
         
         1. no-Allocate는 Cache Miss시, Main memory의 블록만 수정해주는 방식
