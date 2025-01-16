@@ -18,12 +18,13 @@
     - CPU Usage
     - Memeory Usage
 
-이 메타데이터는 프로세스가 생성되면 `PCB(Process Control Block)`이라는 곳에 저장됨
+이 메타데이터는 프로세스가 생성되면 `PCB(Process Control Block)`이라는 곳에 저장됨 <br><br>
 
 ### PCB(Process Control Block)
 
-> 프로세스 메타데이터들을 저장해 놓는 곳, 한 PCB 안에는 한 프로세스의 정보가 담김
+> 프로세스 메타데이터들을 저장해 놓는 곳, 한 PCB 안에는 한 프로세스의 정보가 담김<br>
 > 
+![image (3)](https://github.com/user-attachments/assets/50388209-a8d7-480f-b439-98e96a2e54c9)
 
 
 
@@ -34,7 +35,7 @@
 → 이 프로세스의 메타데이터들이 PCB에 저장
 
 ```
-
+<br><br>
 ### PCB가 왜 필요한가요?
 
 > CPU에서는 프로세스의 상태에 따라 교체작업이 이루어진다. (interrupt가 발생해서 할당받은 프로세스가 wating 상태가 되고 다른 프로세스를 running으로 바꿔 올릴 때)
@@ -42,7 +43,7 @@
 > 
 > 이때, **앞으로 다시 수행할 대기 중인 프로세스에 관한 저장 값을 PCB에 저장해두는 것**이다.
 > 
-
+<br><br>
 ### PCB는 어떻게 관리되나요?
 
 > Linked List 방식으로 관리함
@@ -54,7 +55,7 @@
 > 
 
 이렇게 수행 중인 프로세스를 변경할 때, CPU의 레지스터 정보가 변경되는 것을 `Context Switching`이라고 한다.
-
+<br><br>
 ### Context Switching
 
 > CPU가 이전의 프로세스 상태를 PCB에 보관하고, 또 다른 프로세스의 정보를 PCB에 읽어 레지스터에 적재하는 과정
@@ -63,7 +64,7 @@
 보통 인터럽트가 발생하거나, 실행 중인 CPU 사용 허가시간을 모두 소모하거나, 입출랙을 위해 대기해야 하는 경우에 Context Switching이 발생
 
 `즉, 프로세스가 Ready → Running, Running → Ready, Running → Waiting처럼 상태 변경 시 발생!`
-
+<br><br>
 ### Context Switching의 OverHead란?
 
 overhead는 과부하라는 뜻으로 보통 안좋은 말로 많이 쓰인다.
