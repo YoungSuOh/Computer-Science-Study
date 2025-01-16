@@ -4,7 +4,7 @@
 
 > 데이터베이스의 상태를 변화시키기 위해 수행하는 작업 단위
 > 
-
+<br>
 상태를 변화시킨다는 것 → **SQL 질의어를 통해 DB에 접근하는 것**
 
 ```
@@ -21,7 +21,7 @@
 - 하지만 실제로는 SELECT도 트랜잭션 isolation level 안에서 수행되는 작업으로 보기에, DBMS 입장에선 SELECT도 트랜잭션 범위에 들어간다.
     - 트랜잭션이 시작된 상태에서 SELECT 문을 실행하면, 해당 트랜잭션의 isolation level 설정 등에 의해 일관된 뷰(consistent view)를 읽게 된다.
     - 예를 들어 REPEATABLE READ나 SERIALIZABLE 같은 격리 수준에선, 한 트랜잭션 안에서 같은 SELECT 문을 여러 번 실행하더라도 동일한 결과를 보장해줘야 하기 때문에
-
+<br>
 작업 단위 → **많은 SQL 명령문들을 사람이 정하는 기준에 따라 정하는 것**
 
 ```
@@ -39,7 +39,7 @@
 ```
 
 **즉, 하나의 트랜잭션 설계를 잘 만드는 것이 데이터를 다룰 때 많은 이점을 가져다준다.**
-
+<br><br>
 ### 트랜잭션 특징
 
 ---
@@ -74,6 +74,7 @@ transaction이 정상적으로 종료되지 않았을 때, last consistent state
 *상황이 주어지면 DB 측면에서 어떻게 해결할 수 있을지 대답할 수 있어야 함*
 
 ### DBMS의 구조
+![image (5)](https://github.com/user-attachments/assets/1027035a-3f1c-42df-9ac6-f61a35bd0eb1)
 
 
 1. 질의 처리기
