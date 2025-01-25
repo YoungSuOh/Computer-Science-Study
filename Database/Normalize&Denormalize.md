@@ -14,12 +14,8 @@
 
 ### 제1정규형
 
-<aside>
-💡
-
 도메인이 **원자값(atomic value)**만 포함하도록 변환 (기본키 잡기)
 
-</aside>
 
 - 비정규형
     
@@ -37,38 +33,30 @@
     | 1 | 홍길동 | 영어 |
     | 2 | 김철수 | 과학 |
 
+![tempFileForShare_20250125-105947](https://github.com/user-attachments/assets/3edeb63c-5e49-4838-8f15-69742a551287)
 
 
 ### 제2정규형
 
-<aside>
-💡
 
 부분 함수 종속 제거
 
-</aside>
-
+![tempFileForShare_20250125-110332](https://github.com/user-attachments/assets/b28b0165-c953-4276-b1e1-a3c05083f4e9)
 
 
 ## 제3정규형
 
-<aside>
-💡
 
 이행 함수 종속 제거
 
-</aside>
-
+![tempFileForShare_20250125-110613](https://github.com/user-attachments/assets/ce7193d4-355c-4e4f-9e9a-be90d5768fec)
 
 
 ## BCNF (Boyce-Codd Normal Form)
 
-<aside>
-💡
-
 **모든 결정자가 후보 키**(Candidate Key)이어야 한다
 
-</aside>
+![tempFileForShare_20250125-112220](https://github.com/user-attachments/assets/1f3d730f-c167-43f0-98af-e9cf9f918b6b)
 
 
 
