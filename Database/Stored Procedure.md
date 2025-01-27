@@ -10,7 +10,9 @@
 
 이럴 때 사용할 수 있는 것이 바로 `Stored Procedure` 이다.
 
+![image (12)](https://github.com/user-attachments/assets/7262c54b-386b-4a18-b2b1-e613a6ac2a35)
 
+<br>
 
 ## Stored Procedure의 구조
 
@@ -30,6 +32,9 @@ DELIMITER ;
     - `IN`: 호출 시 값을 전달만.
     - `OUT`: 프로시저 내에서 값을 설정해 반환.
     - `INOUT`: 값을 전달받고 수정된 값을 반환.
+ 
+
+<br>
 
 ## 사용 사례
 
@@ -84,7 +89,11 @@ DELIMITER ;
         ```
         
 
+<br>
+
 ## Stored Procedure의 장단점
+
+<br>
 
 ### 장점
 
@@ -98,6 +107,9 @@ DELIMITER ;
     - 만약 해당 프로세스가 여러번 사용될 때, 다시 컴파일 작업을 거치지 않고 캐시에서 가져오게 된다.
 - **보안**
     - 프로시저 내에서 참조 중인 테이블의 접근을 막을 수 있다.
+ 
+
+<br>
 
 ### 단점
 
