@@ -17,14 +17,14 @@
     <tr>
       <td>Computer Science</td>
       <td>운영체제</td>
-      <td><code>진행중</code></td>
+      <td><code>완료</code></td>
       <td><code>01.10 ~ 01.16</code></td>
     </tr>
     <tr>
       <td>Computer Science</td>
       <td>데이터베이스</td>
-      <td><code>진행중</code></td>
-      <td><code>01.16 ~ ing</code></td>
+      <td><code>완료</code></td>
+      <td><code>01.16 ~ 01.27</code></td>
     </tr>
     <tr>
       <td>Computer Science</td>
