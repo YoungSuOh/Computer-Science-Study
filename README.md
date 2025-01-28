@@ -29,8 +29,8 @@
     <tr>
       <td>Computer Science</td>
       <td>네트워크</td>
-      <td><code>미진행</code></td>
-      <td><code>-</code></td>
+      <td><code>진행중</code></td>
+      <td><code>01.28 ~ ing</code></td>
     </tr>
     <tr>
       <td>Computer Science</td>
