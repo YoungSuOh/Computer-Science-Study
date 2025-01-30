@@ -5,9 +5,12 @@
 - 네트워크에서 신뢰적인 연결방식
 - TCP는 기본적으로 unreliable network에서, reliable network를 보장할 수 있도록 하는 프로토콜
 
+<br>
+
 ## 데이터의 송신 과정
 
-![송신 과정, naver D2 - TCP/IP 네트워크 스택 이해하기](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/69453cfe-a9ff-49e1-a477-00e314bc4494/Untitled.png)
+![Untitled](https://github.com/user-attachments/assets/1c817971-b57f-469f-aba8-095a30d2d814)
+
 
 송신 과정, naver D2 - TCP/IP 네트워크 스택 이해하기
 
@@ -23,15 +26,21 @@
 1 ~ 4 의 각각의 계층 간 데이터의 이동이 정확히 어떻게 이루어 지는지는 몰라도 괜찮고,
 간단히 **다양한 운영체제의 시스템 콜, 그리고 인터럽트를 활용한다** 정도만 이해해도 된다.
 
+<br>
+
 ### 데이터를 송신할 때
 
 서버 프로세스가 운영체제의 write 시스템 콜을 통해 소켓에 데이터를 보내게 되고, 이후 TCP / UDP 계층과 IP 계층, 그리고 대표적으로 Ethernet을 거쳐  흐름제어, 라우팅 등의 작업을 하게 된다.
 
 이후, 마지막으로 NIC(랜 카드)를 통해 외부 데이터를 보낸다.
 
+<br>
+
 ### 데이터를 수신할 때
 
 데이터 수신 시에는 반대로 NIC에서 데이터를 수신하고, 인터럽트를 통해 Driver로 데이터를 옮기고 이후 네트워크 스택에서 데이터가 이동하며 소켓에 데이터가 담기고, 최종적으로 수신 대상이 되어 프로세스에 데이터가 도달하게 된다.
+
+<br>
 
 ### Socket
 
@@ -45,7 +54,8 @@ TCP는 UDP와 달리 신뢰성 있는 데이터 송수신을 하며 TCP 소켓�
 
 UDP는 TCP와 달리 비연결지향이다.
 
-![TCP 소켓을 사용하는 흐름](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/a0930912-913c-4fd2-94e0-e2899a5e92a8/Untitled.png)
+![Untitled (1)](https://github.com/user-attachments/assets/2832187a-7ba7-47a7-8cbc-cb0907682a11)
+
 
 TCP 소켓을 사용하는 흐름
 
@@ -79,6 +89,9 @@ TCP 소켓을 사용하는 흐름
         - web server 프로세스가 데이터를 전송하기 위해 write(), read() 시스템 콜을 사용 할 때,
         대상 파일의 파일 디스크립터를 파라미터로 전송하여 OS에게 어떤 파일에 데이터를 작성할지, 혹은 어떤 파일의 데이터를 요청할지 결정한다.
         - 이때, 파일 디스크립터가 소켓의 파일 디스크립터인 경우, **소켓에 데이터를 작성(데이터 송신)** 혹은 **소켓의 데이터를 읽어들이는(데이터 수신) 동작**을 하게 되는 것이다.
+     
+<br>
+
 2. bind() 시스템 콜
     
     <aside>
@@ -124,6 +137,9 @@ TCP 소켓을 사용하는 흐름
     - bind()  시스템 콜은 **생성한 소켓에 실제 아이피 주소와 포트 번호를 부여하는 시스템 콜**
     - OS에게 **어떤 소켓에 아이피 주소와 포트번호 부여할지 알려주기 위해** 파라미터에 소켓의 파일디스크립터를 포함한다.
     - 클라이언트는 통신 시 포트번호가 자동으로 부여되기에 bind 시스템 콜은 서버에만 사용한다.
+  
+<br>
+
 3. listen() (⭐only for TCP / 중요)
     
     <aside>
@@ -166,7 +182,8 @@ TCP 소켓을 사용하는 흐름
     
     ### 🤔 그러면 어떻게 연결 ****요청을 받아들이게 하는 걸까? 🤔
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/81c79fcc-e2d9-4c8c-9cde-86f5f6abdad8/Untitled.png)
+    ![Untitled (2)](https://github.com/user-attachments/assets/c63d1911-947d-4e0d-a13c-d6310d334485)
+
     
     - 서버 측의 listen() 이후 대기 상태에서 클라이언트의 연결 요청을 받아주기 위해 backlog queue를 가진 채로 기다리게 된다.
     - 실제로는 서버에 셀 수 없이 많은 클라이언트가 요청을 보내게 되고, 이 요청들은 모두 backlog queue에 저장이 된다.
@@ -174,6 +191,9 @@ TCP 소켓을 사용하는 흐름
     그렇다면 큐에서 대기 중인 요청은 어떻게 처리가 될까용??
     
     - 뒤에 `accept() 시스템 콜`의 동작을  보면 이해가 될 것이다.
+  
+<br>
+
 4. accept() 시스템 콜 ( ⭐⭐매우 놀랍도록 중요)
     
     <aside>
@@ -255,21 +275,26 @@ TCP 소켓을 사용하는 흐름
     **그러니 우선은 그러려니 하고 넘어갑시다.**
     
     </aside>
+
+<br>
     
 5. TCP  3 Way Handshake
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/90b1ddb2-226e-4f24-b0ce-a1bb477b957b/Untitled.png)
+    ![Untitled (3)](https://github.com/user-attachments/assets/8de98d9b-d0d8-4d8a-b1cb-57e95523cef3)
     
     - TCP 3-way handshake는 클라이언트와 서버간에 서로 신뢰성있는 통신을 위해 서로 준비가 되었다! 이거를 확인하는 과정이라고 이해하시면 된다.
     - 위의 3과정 중 client가 보내는 SYN이 listen 상태인 서버의 소켓에 연결을 요청을 보내는 것이라고 생각하시면 되고, 이후 2 과정 (SYN, ACK / ACK)은 accept 시스템 콜 이후 진행하여 최종적으로 **`Established 상태`** 를 수립하고 본격적인 데이터의 송/수신 이뤄집니다.
     - 실제 listen 이후 동작을 아래 그림처럼 표현이 가능하다.
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/4404ae10-df7f-4991-9d0e-a4c75817fb4f/Untitled.png)
+    ![Untitled (4)](https://github.com/user-attachments/assets/0c226905-d799-41e9-9611-6e1f743c6431)
+
     
     - 당연하게도 위 그림 중 다음 과정도 OS가 제공하는 system call을 통해 이루어진다~ 이말이야
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/b98f0057-2a06-4743-9253-92dafbd283ec/Untitled.png)
-    
+    ![Untitled (5)](https://github.com/user-attachments/assets/bf97f689-6dc3-4e41-8bf0-a8f591c7652b)
+
+
+<br>    
 
 ### Accept 시스템 콜 이후 멀티 프로세스/멀티 쓰레드
 
@@ -409,6 +434,8 @@ int main() {
 
 자식 프로세스에게 나머지 일을 맡기고 **다시 새로운 연결요청을 받아주는 형태**인 것을 확인 할 수 있다.
 
+<br>
+
 ### 👨‍👩‍👧‍👦 자식 프로세스의 입장
 
 ```c
@@ -498,6 +525,8 @@ if (fork() == 0 -> true) { // 자식 프로세스
 **이는 곧 자식 프로세스는 새로운 연결요청을 받지 않고 그저 응답을 준 후 exit(0)를 통해 종료된다!**
 
 이후 시스템 콜, recv(), send()는 말 그대로 데이터를 수신, 송신 할 때 사용되는 시스템 콜 입니다.
+
+<br>
 
 ### 😀 핵심 요약
 
