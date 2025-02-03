@@ -6,9 +6,13 @@
 - 비연결형, 신뢰성 없는 전송 프로토콜
 - 데이터그램 단위로 쪼개면서 전송을 해야 하기 때문에 전송 계층이다.
 
+
+<br>
+
 ## TCP와 UDP는 왜 나오게 되었는가?
 
-![image.png](attachment:c8e085ac-2ff2-4878-841b-374b99961f65:image.png)
+![image (6)](https://github.com/user-attachments/assets/32f049cd-1083-41cf-b8c3-2bfb3a3c21f7)
+
 
 - IP의 역할은 Host to Host(장치 to 장치)만을 지원한다. 장치에서 장치로 이동은 IP로 해결되지만, 하나의 장비안에서 수많은 프로그램들이 통신을 할 경우에는 IP만으로는 한계가 있다.
     
@@ -17,7 +21,9 @@
 - 또한, IP에서 오류가 발생한다면 ICMP에서 알려준다. 하지만 ICMP는 알려주기만 할 뿐 대처를 못하기 때문에 IP보다 위에서 처리를 해줘야 한다.
     
     ⇒ TCP와 UDP를 등장
-    
+
+
+<br>
 
 ### TCP와 UDP가 어떻게 오류를 해결하는가?
 
@@ -37,10 +43,14 @@ UDP : IP가 제공하는 정도의 수준만을 제공하는 간단한 IP 상위
 | 세그먼트 TCP 패킷 | 데이터그램 UDP 패킷 |
 | HTTP, Email, File transfer에서 사용 | 도메인, 실시간 동영상 서비스에서 사용 |
 
+<br>
+
 ## UDP는 왜 사용할까?
 
 - UDP의 결정적인 장점은 데이터의 신속성이다. 데이터의 처리가 TCP보다 빠르다.
 - 주로 실시간 방송과 온라인 게임에서 사용된다. 네트워크 환경이 안 좋을때, 끊기는 현상을 생각하면 된다.
+
+<br>
 
 ### DNS(Domain Name System)에서 UDP를 사용하는 이유
 
@@ -50,9 +60,13 @@ UDP : IP가 제공하는 정도의 수준만을 제공하는 간단한 IP 상위
 - DNS : port 53번
 - But, TCP를 사용할 때가 있다! 크기가 512(UDP 제한)이 넘을 때, TCP를 사용해야한다.
 
+
+<br>
+
 ### UDP Header
 
-![image.png](attachment:9d4b55e9-9b8d-435a-a9b6-d1bd298ecef7:image.png)
+![image (7)](https://github.com/user-attachments/assets/8995aeec-1a54-4ee0-ae95-be9eaf51ae33)
+
 
 Source port : 시작 포트 
 
