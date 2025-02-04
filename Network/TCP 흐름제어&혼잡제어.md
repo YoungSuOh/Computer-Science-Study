@@ -6,6 +6,8 @@
 - 수신 측에서 제한된 저장 용량을 초과한 이후에 도착하는 패킷은 손실될 수 있으며, 만약 손실된다면
 - 흐름제어는  위와 같이 송신 측과 수신 측의 TCP 버퍼 크기 차이로 생기는 데이터 처리 속도 차이를 해결하기 위한 방법이다.
     - TCP 버퍼 : 송신 측은 버퍼에 TCP 세그먼트를 보관한 후 순차적으로 전송하고, 수신 측은 도착한 TCP 세그먼트를 애플리케이션이 읽을 때까지 버퍼에 보관한다.
+ 
+<br>
 
 ## 흐름 제어 방법
 
@@ -13,7 +15,10 @@
 
 매번 전송한 패킷에 대해 확인 응답(ACK)를 받으면 다음 패킷을 전송하는 방법이다. 그러나 패킷을 하나씩 보내기 때문에 비효율적인 방법이다.
 
-![image.png](attachment:75123282-73e5-4aa5-9c81-ce5c9bc533a5:image.png)
+![image (8)](https://github.com/user-attachments/assets/8f94787e-6b9a-4a25-b6ba-87fff70d97f4)
+
+<br>
+
 
 ### 2. Sliding Window
 
@@ -28,7 +33,8 @@
     - **이를 통해 송신자가 매번 ACK를 기다리지 않고 일정 크기의 데이터 블론을 연속적으로 전송할 수 있음**
 - Sliding Window의 작동 방식
     
-    ![image.png](attachment:5a7513a8-d629-4a62-bd62-4e3a35e25bed:image.png)
+    ![image (9)](https://github.com/user-attachments/assets/21a0c249-3020-465b-9fb0-67d47c17bcf0)
+
     
     - 송신자의 슬라이딩 윈도우
         - 송신사는 한 번에 여러 개의 패킷을 보낼 수 있는 윈도우 크기만큼 데이터를 전송하고, 응답(ACK)이 오면 윈도우를 앞으로 이동시킨다.
@@ -43,6 +49,9 @@
         3. 송신: 윈도우 이동 → ⑤⑥⑦⑧ 전송
         4. 수신: ⑤⑥⑦⑧ 정상 수신 → **ACK 9 전송**
         5. 송신: 윈도우 이동 → ⑨⑩ 전송
+     
+
+<br>
 
 ## 혼잡 제어
 
@@ -51,6 +60,8 @@
 이런 상황은 **송신 측의 전송 속도를 적절히 조절**하여 예방할 수 있는데, 이것을 혼잡 제어라고 한다.
 
 정리하자면, 흐름 제어는 송수신 측 사이의 패킷 수를 제어하는 기능이라 할 수 있으며, 혼잡제어는 네트워크 내의 패킷 수를 조절하여 네트워크의 오버플로우를 방지하는 기능이다.
+
+<br>
 
 ## 혼잡 제어 방법
 
@@ -62,7 +73,9 @@
 - 만약 전송에 실패하면 윈도우 크기를 반으로  줄인다.
 - 윈도우 크기를 너무 조금씩 늘리기 때문에 네트워크의 모든 대역을 활용하여 제대로 된 속도로 통신하기까지가 너무 오래 걸린다는 단점이 있다.
 
-![image.png](attachment:a7cf0549-518d-4fab-818c-53de74108abb:image.png)
+![image (10)](https://github.com/user-attachments/assets/01df6e26-eb62-4159-9fd3-c1d36079030c)
+
+<br>
 
 ### 2. Slow Start (느린 시작)
 
@@ -72,7 +85,9 @@
 
 이 방식은 보낸 데이터의 ACK가 도착할 때마다 윈도우 크기를 증가시키기 때문에 **처음에는 윈도우 크기가 조금 느리게 증가할지라도, 시간이 가면 갈수록 윈도우 크기가 점점 빠르게 증가한다는 장점**이 있다.
 
-![image.png](attachment:32c5cdfb-9bb3-49bd-b85f-4e24b7d0a813:image.png)
+![image (11)](https://github.com/user-attachments/assets/9b20e289-2a0f-4a14-b5ca-c60bdc2acb6c)
+
+<br>
 
 ### 3. 빠른 재전송 (Fast Retransmit)
 
@@ -81,10 +96,15 @@
 - 그리고 이런 중복 ACK를 3개 받으면 재전송이 이루어진다.
 - 송신 측은 자신이 설정한 타임 아웃 시간이 지나지 않았어도 바로 해당 패킷을 재전송할 수 있기 때문에 보다 빠른 재전송률을 유지할 수 있다.
 
+
+<br>
+
 ### 4. 빠른 회복 (Fast Recovery)
 
 - 빠른 회복은 혼잡한 상태가 되면 윈도우 크기를 1로 줄이지 않고 반으로 줄이고 선형 증가시키는 방법이다.
 - 이 방법을 적용하면 혼잡 상황을 한 번 겪고 나서부터는 AIMD 방식으로 동작한다.
+
+<br>
 
 ## 혼잡 제어 정책
 
@@ -94,11 +114,14 @@ TCP에는 Tahoe, Reno, New Reno, Cubic, Ealstic-TCP까지 다양한 혼잡 제�
 
 Tahoe와 Reno는 기본적으로 처음에는 Slow Start 방식을 사용하다가 네트워크가 혼잡하다고 느껴졌을 때는 AIMD 방식으로 전환하는 방법을 사용하는 정책이다.
 
-![image.png](attachment:2c30b1d3-6d68-4bd4-b04e-83a9bbd77663:image.png)
+![image (12)](https://github.com/user-attachments/assets/e20d06e9-5e33-4b64-bbca-6adae28107f4)
+
 
 위 그래프의 Y축은 혼잡 윈도우, X축은 시간으로 하여 Tahoe와 Reno의 작동 방식을 설명하고 있다. 
 
 본격적으로 Tahoe와 Reno를 알아보기에 앞서, 일단 이 그래프를 이해하기 위해 몇 가지 이해하는 것이 좋다. 그래프가 꺾여 있는 지점인 `3 ACK duplicate` , `Timeout` 용어와 그래프 상승 폭이 변하고 있는 지점인 `Threshold` 용어를 알아 보자.
+
+<br>
 
 ### 기본 용어 정리
 
@@ -109,14 +132,16 @@ Tahoe와 Reno는 기본적으로 처음에는 Slow Start 방식을 사용하다�
     - 하지만 특정 패킷이 손실되거나 도착 순서가 엉킬 경우, 수신자는 중복된 ACK를 보내면서 송신자에게 ‘이전 패킷이 아직 도착하지 않았다’ 는 신호를 보낸다.
     - 즉, 동일한 ACK 번호를 3번 이상 연속으로 수신하면 송신자는 해당 패킷이 손실된 것으로 판단하고, 즉시 재전송하는 기법이다. ⇒ Fast Retransmission (빠른 재전송)이라 함
         
-        ![image.png](attachment:87616a8f-9ec0-4252-910a-bf9de9519bf9:image.png)
+        ![image (13)](https://github.com/user-attachments/assets/ae1f7eed-ab2a-4d44-b0d1-778ba830c5fa)
+
         
         - 해당 기법을 `빠른 재전송` 이라고 부르며, 송신 측은 자신이 설정한 타임 아웃 시간이 지나지 않았어도 바로 해당 패킷을 재전송할 수 있기 때문에 보다 빠른 전송률을 유지할 수 있게 된다.
 - Slow Start 임계점 (ssthresh)
     - Tahoe와 Reno를 비교하는 그래프를 보면 `Threshold(임계점)` 이라는 단어가 등장한다. 이 임계점은 `Slow Start Threshold(ssthresh)` 를 뜻하는 것으로, 여기까지만 Slow Start를 사용하겠다는 의미를 가진다.
         
-        ![image.png](attachment:a341d961-c755-4ddf-8a12-25521eb51917:image.png)
-        
+       
+        ![image (14)](https://github.com/user-attachments/assets/40bf8186-89d9-4ea4-aec7-31601ad9fbb1)
+
         - Slow Start를 사용하며 윈도우 크기를 지수적으로 증가시키다보면 어느 순간부터는 윈도우 크기가 기하급수적으로 늘어나서 제어하기가 힘들다.
         - 또한, 네트워크의 혼잡이 예상되는 상황에서 빠르게 값을 증가시키기 보다는 조금씩 증가시키는 편이 훨씬 안전하다.
         - 쉽게 생각해서 현재 윈도우 크기가 10이고, 현재 네트워크에 남은 공간이 15라고 할 때, Slow Start 방식을 사용하면 윈도우 크기가 20이 되지만 AIMD를 사용하면 앞으로 5번은 윈도우 크기를 천천히 늘릴 수 있다.
@@ -128,7 +153,8 @@ TCP Tahoe는 처음에는 Slow Start를 사용하여 자신의 윈도우 크기�
 
 그러다가 ACK Duplicated나 Timeout이 발생하면 네트워크에 혼잡이 발생했다고 판단하고, ssthresh와 자신의 윈도우 크기를 수정하게 된다.
 
-![image.png](attachment:6c825512-0433-4c0f-a09e-b1250755412a:image.png)
+![image (15)](https://github.com/user-attachments/assets/08c0b04a-41a8-4292-b9a0-ccb79afa3ee2)
+
 
 - 위 그래프에서 청록색 선은 송신 측의 혼잡 윈도우 크기를, 굵은 검정선은 ssthresh 값을 보여주고 있다.
 - 이 시나리오에서 송신 측의 혼잡 윈도우 크기는 8로 초기화 되었고, 그에 따라 ssthresh는 4로 설정되어 있다.
@@ -139,17 +165,22 @@ TCP Tahoe는 처음에는 Slow Start를 사용하여 자신의 윈도우 크기�
     - 이 정책은 한 번 혼잡 상황이 발생한 지점을 기억하고 그 지점이 가까워지지 않도록 합리적으로 조절하고 있다.
     - 하지만, 초반의 Slow Start 구간에 윈도우 크기를 늘릴 때 오래 걸린다는 단점이 있고, 혼잡 상황이 발생했을 때 다시 윈도우 크기를 1에서부터 시작해야 한다는 단점이 있다.
 
+<br>
+
 ### TCP Reno
 
 TCP Reno는 TCP Tahoe 이후에 나온 정책으로, Tahoe와 마찬가지로 Slow Start로 시작하여 임계점을 넘어서면 AIMD을 사용한다. 
 
 다만, Tahoe와는 다르게 3 ACK Duplicated와 Timeout 혼잡 상황을 구분한다.
 
-![image.png](attachment:66a26ea5-9c2d-4d17-94db-a3b3a86c7ba9:image.png)
+
+![image (16)](https://github.com/user-attachments/assets/9c997c51-6419-4f08-938e-948b50fa6fba)
 
 - Reno는 3개의 중복 ACK가 발생했을 때, 윈도우 크기를 1로 줄이는 것이 아니라 AIMD처럼 반으로만 줄이고 sshthresh를 줄어든 윈도우 값으로 정하게 된다. 이 방식을 `빠른 회복`이라고 부른다.
 - 그러나 Timeout에 의해서 데이터가 손실되면 Tahoe와 마찬가지로 윈도우 크기를 바로 1로 줄여버리고 Slow Start를 진행한다. 이때 ssthresh를 변경하지는 않는다.
 - 즉, Reno는 ACK 중복은 Timeout에 비해 그리 큰 혼잡이 아니라고 가정하고 혼잡 윈도우 크기를 1로 줄이지도 않는다는 점에서 혼잡 상황의 우선 순위를 둔 정책이라 볼 수 있다.
+
+<br>
 
 ## 면접 예상 질문 및 답
 
