@@ -4,7 +4,8 @@ HTTPS에서 클라이언트와 서버 간 통신 전 SSL 인증서로 신뢰성 
 
 ## 🔄 **2. TLS/SSL Handshake 과정**
 
-![image.png](attachment:a626f59f-093b-4598-9856-db23ccf9d195:image.png)
+![image (17)](https://github.com/user-attachments/assets/20abb3ef-353d-43bb-ab48-51b06d1cfd2b)
+
 
 1. Client Hello
     1. 클라이언트 → 서버
