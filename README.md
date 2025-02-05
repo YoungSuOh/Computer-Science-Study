@@ -29,14 +29,14 @@
     <tr>
       <td>Computer Science</td>
       <td>네트워크</td>
-      <td><code>진행중</code></td>
-      <td><code>01.28 ~ ing</code></td>
+      <td><code>완료</code></td>
+      <td><code>01.28 ~ 02.04</code></td>
     </tr>
     <tr>
       <td>Computer Science</td>
       <td>컴퓨터구조</td>
-      <td><code>미진행</code></td>
-      <td><code>-</code></td>
+      <td><code>진행중</code></td>
+      <td><code>02.05 ~ ing</code></td>
     </tr>
      <tr>
       <td>Computer Science</td>
