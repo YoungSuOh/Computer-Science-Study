@@ -40,9 +40,9 @@
     </tr>
      <tr>
       <td>Computer Science</td>
-      <td>소프트웨어 엔지니어링</td>
-      <td><code>미진행</code></td>
-      <td><code>-</code></td>
+      <td>자료구조</td>
+      <td><code>진행중</code></td>
+      <td><code>02.09 ~ ing</code></td>
     </tr>
   </tbody>
 </table>
