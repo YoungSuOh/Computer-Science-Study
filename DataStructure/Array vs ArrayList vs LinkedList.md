@@ -1,6 +1,7 @@
-![image.png](attachment:dfdb985d-aff4-4170-8be3-e01ece21df97:image.png)
 
-![image.png](attachment:3ff01c3e-ffb8-4be5-8536-6846df73d709:image.png)
+![image (18)](https://github.com/user-attachments/assets/27d37e44-55fb-42d0-ae41-b5542ec998c9)
+
+![image (19)](https://github.com/user-attachments/assets/921f0a32-ff76-41ac-82d5-c38e82637c44)
 
 ## Array(배열)
 
