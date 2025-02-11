@@ -1,6 +1,7 @@
 # Hash
 
-![image.png](attachment:fdeb9560-b7db-4870-bc51-df43b672fe1f:image.png)
+![image (21)](https://github.com/user-attachments/assets/59e65779-4996-4315-bcc2-34169fe43242)
+
 
 해시(Hash) 자료구조는 **키(key)와 값(value)을 매핑**하는 방식으로 데이터를 저장하는 구조이다.
 
