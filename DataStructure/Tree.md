@@ -17,7 +17,8 @@ Node와 Edge로 이루어진 자료구조
 
 ## 트리 순회 방식
 
-![image.png](attachment:4b0f9a05-932f-4444-bbcc-2e4a71203231:image.png)
+![image (27)](https://github.com/user-attachments/assets/a842de94-aec2-4f35-bf24-5683ff6d5519)
+
 
 1. 전위 순회(pre-order)
     
