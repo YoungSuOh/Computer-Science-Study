@@ -6,7 +6,8 @@
 
 힙 트리는 중복된 값 허용한다 (이진 탐색 트리는 중복값 허용 x)
 
-![image.png](attachment:b42b309c-e97a-4a8d-9b4c-fde9a2bf3275:image.png)
+![image (22)](https://github.com/user-attachments/assets/1fa76668-97bc-4216-9a66-a937515396eb)
+
 
 - **최대 힙(max heap)**
     - 부모 노드의 키 값이 자식 노드의 키 값보다 크거나 같은 완전 이진 트리
