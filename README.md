@@ -41,35 +41,29 @@
      <tr>
       <td>Computer Science</td>
       <td>자료구조</td>
-      <td><code>진행중</code></td>
-      <td><code>02.09 ~ ing</code></td>
+      <td><code>완료</code></td>
+      <td><code>02.09 ~ 02.12</code></td>
     </tr>
   </tbody>
 </table>
 
 
-### Language
+### Project
 <table>
   <thead>
     <tr>
-      <th>종류</th>
-      <th>과목</th>
+      <th>프로젝트명</th>
+      <th>설명</th>
       <th>진행 상황</th>
       <th>기간</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Computer Science</td>
-      <td>C & C++</td>
+      <td>Dr.Rate</td>
+      <td>네이버 클라우드 캠프 최종 프로젝트</td>
       <td><code>미진행</code></td>
       <td><code>-</code></td>
-    </tr>
-    <tr>
-      <td>Computer Science</td>
-      <td>Java</td>
-      <td><code>미진행</code></td>
-      <td><code>-</code></td>
-    </tr>
+    </tr>    
   </tbody>
 </table>
