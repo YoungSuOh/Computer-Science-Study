@@ -1,6 +1,7 @@
 ## 스택 (Stack)
 
-![image.png](attachment:058b1194-54d5-4c53-ae9f-4e6b2b2dd200:image.png)
+![image (28)](https://github.com/user-attachments/assets/d86d46a4-0d30-4802-8ac7-6fc237798491)
+
 
 입력과 출력이 한 곳(방향)으로 제한
 
@@ -89,7 +90,8 @@ private boolean isFull(int cnt) {
 
 버퍼, 마구 입력된 것을 처리하지 못하고 있는 상황, BFS
 
-![image.png](attachment:99788c8d-749f-4fca-b7c0-61d161c55bce:image.png)
+![image (29)](https://github.com/user-attachments/assets/be074e06-e4fb-4df1-80a2-8093dbf4a9e4)
+
 
 큐의 가장 첫 원소를 front, 끝 원소를 rear라고 부름
 
