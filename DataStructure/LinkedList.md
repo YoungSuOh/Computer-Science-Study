@@ -1,6 +1,7 @@
 # Linked List
 
-![image.png](attachment:2436ac13-603f-490c-bfd6-692d42f6452e:image.png)
+![image (22)](https://github.com/user-attachments/assets/0fa741a2-1f6d-46c0-b48d-048578a388aa)
+
 
 연속적인 메모리 위치에 저장되지 않는 선형 데이터 구조 (포인터를 사용해서 연결한다)
 
@@ -99,7 +100,8 @@ void append(struct Node** head_ref, int new_data){
 
 ### **Single Linked List**
 
-![image.png](attachment:b7c733b9-d8b4-4a29-aade-53f4e7be3544:image.png)
+
+![image (23)](https://github.com/user-attachments/assets/81b8c302-4142-426d-826f-aa2272f0cd1b)
 
 - **한 방향(→)으로만 연결**됨 (노드가 다음 노드만 가리킴)
 - *첫 번째 노드(head)**는 리스트의 시작점
@@ -114,7 +116,8 @@ void append(struct Node** head_ref, int new_data){
 
 ### Doubly Linked List
 
-![image.png](attachment:791c1ab1-b37b-468a-b4c8-068fb13315fe:image.png)
+![image (24)](https://github.com/user-attachments/assets/7a72e338-9775-48e0-aee6-d8674ec2e2fc)
+
 
 - **양방향(↔) 연결** 가능 (각 노드가 앞과 뒤를 가리킴)
 - **이전 노드(prev) 포인터 추가**, 따라서 **뒤로 이동 가능**
@@ -128,7 +131,8 @@ void append(struct Node** head_ref, int new_data){
 
 ### Circular Singly Linked List
 
-![image.png](attachment:87809c5b-aefa-47c7-9c99-3862a49c927c:image.png)
+![image (25)](https://github.com/user-attachments/assets/bc8b451d-12c4-41ed-b188-1cae9fffce85)
+
 
 - 마지막 노드가 `nullptr`이 아니라 **처음(head)으로 돌아감**
 - **항상 순환** (끝이 없음)
@@ -143,7 +147,8 @@ void append(struct Node** head_ref, int new_data){
 
 ### Circular Doubly Linked List
 
-![image.png](attachment:ed67a1aa-b81f-4f32-bfc6-8f58bca0c6a5:image.png)
+![image (26)](https://github.com/user-attachments/assets/dd6cc496-09c9-4e24-85a2-5011af60f24a)
+
 
 - 이중 연결 리스트처럼 **양방향 이동 가능(↔)**
 - 마지막 노드가 첫 노드를 가리켜서 **끝이 없이 계속 순환**
