@@ -47,6 +47,26 @@
   </tbody>
 </table>
 
+### Language & FrameWork
+<table>
+  <thead>
+    <tr>
+      <th>종류</th>
+      <th>과목</th>
+      <th>진행 상황</th>
+      <th>기간</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Language</td>
+      <td>Java</td>
+      <td><code>진행중</code></td>
+      <td><code>02.13 ~ ing</code></td>
+    </tr>    
+  </tbody>
+</table>
+
 
 ### Project
 <table>
