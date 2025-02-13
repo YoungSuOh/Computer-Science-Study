@@ -16,7 +16,8 @@
 
 ## JVM의 구조도
 
-![image.png](attachment:f41d8bbb-dc55-43e7-add5-1c2271c34fe8:image.png)
+![image (30)](https://github.com/user-attachments/assets/36e1e1cb-8454-45c5-ac81-dfdece0469fc)
+
 
 1. JVM이 프로그램 실행을 위해 OS로부터 메모리를 할당받음
     - Java 프로그램이 실행되면 **JVM 프로세스가 생성**되고, 운영체제(OS)로부터 **Heap, Stack, Method Area** 등 필요한 메모리를 할당받음
