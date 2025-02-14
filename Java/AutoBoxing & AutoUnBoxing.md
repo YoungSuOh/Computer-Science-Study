@@ -19,7 +19,8 @@ Integer num = new Integer(10);
 int i = num.intValue();
 ```
 
-![image.png](attachment:c7308a9d-b8ee-4f00-9025-8b243a1bb42d:image.png)
+![image (31)](https://github.com/user-attachments/assets/e8f43284-913f-4b9d-b53b-8864c756676f)
+
 
 ## **오토 박싱 & 오토 언박싱**
 
