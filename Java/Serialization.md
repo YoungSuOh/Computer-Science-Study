@@ -17,7 +17,8 @@
 3. **분산 시스템에서 객체 공유 가능**
     - Java RMI(Remote Method Invocation) 같은 기술을 사용할 때, **객체를 다른 JVM에서 사용할 수 있도록 직렬화해야 함**.
 
-![image.png](attachment:687959de-ad82-42f1-b21c-9f2e52458030:image.png)
+![image (32)](https://github.com/user-attachments/assets/44d5e894-b35f-491d-80c6-564f6ec54d40)
+
 
 ## 객체 직렬화
 
@@ -25,7 +26,8 @@
 - 객체를 byte[] 로 변환시켜서 전송해야 한다.
 - 객체를 파일에 직렬화(serialize)하여 저장하고, 저장된 객체를 다시 역직렬화(deserialize)하여 읽어오기
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/78b2bb01-b78f-4ab2-9de7-c1e4834ec80a/Untitled.png)
+![Untitled](https://github.com/user-attachments/assets/b1d408b0-842f-49e7-996e-6283ca301121)
+
 
 - 직렬화 사용처
     - 휘발성이 있는 캐싱 데이터를 영구 저장이 필요할 때 사용할 수도 있다.
@@ -35,7 +37,8 @@
     - 자바 직렬화는 외부 파일이나 네트워크를 통해 클라이언트 간에 객체 데이터를 주고 받을 때 사용된다.
     - WHY 직렬화 instead of JSON, CSV??
         
-        ![스크린샷(310).png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/8b9cc925-f38b-4d46-bbd0-54e827f3a7ec/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7(310).png)
+        ![스크린샷(310)](https://github.com/user-attachments/assets/acb16eaf-2692-411b-8c82-439f1b2bbb58)
+
         
     - 직렬화의 장점
         - 자바의 고유 기술인 만큼 자바 시스템에서 개발에 최적화되어 있다.
@@ -92,7 +95,8 @@
     
     </aside>
     
-    ![스크린샷(311).png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/9576ced0-6ff5-4af9-8109-250df3a7a4a6/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7(311).png)
+    ![스크린샷(311)](https://github.com/user-attachments/assets/8d3408c1-6301-4112-8923-7bf8c4f3972d)
+
     
 - 자바 역직렬화 하기
     
@@ -118,7 +122,8 @@
     }
     ```
     
-    ![스크린샷(312).png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/e4ca210a-3795-403d-9567-7da2e954a0be/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7(312).png)
+    ![스크린샷(312)](https://github.com/user-attachments/assets/eac4df15-588b-40c8-a66c-9dc8fc15483e)
+
     
 
 ## **요약**
