@@ -40,7 +40,8 @@ Collection은 외부 반복, Stream은 내부 반복이라고 했다. 두 차이
 
 즉, Collection에서 병렬성을 이용하려면 직접 `synchronized` 를 통해 관리해야 한다.
 
-![image.png](attachment:cdfc7d28-f1cb-4a44-be0e-1af40e41f5f1:image.png)
+![image (33)](https://github.com/user-attachments/assets/7a386dc0-5e34-4b94-b87a-7339208c08bd)
+
 
 ### 🎯 **핵심 차이**
 
