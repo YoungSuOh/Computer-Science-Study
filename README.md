@@ -61,8 +61,14 @@
     <tr>
       <td>Language</td>
       <td>Java</td>
-      <td><code>진행중</code></td>
-      <td><code>02.13 ~ ing</code></td>
+      <td><code>완료</code></td>
+      <td><code>02.13 ~ 02.19</code></td>
+    </tr>    
+    <tr>
+      <td>FrameWork</td>
+      <td>Spring Boot</td>
+      <td><code>미진행</code></td>
+      <td><code> - </code></td>
     </tr>    
   </tbody>
 </table>
