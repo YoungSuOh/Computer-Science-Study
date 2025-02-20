@@ -67,8 +67,8 @@
     <tr>
       <td>FrameWork</td>
       <td>Spring Boot</td>
-      <td><code>미진행</code></td>
-      <td><code> - </code></td>
+      <td><code>진행중</code></td>
+      <td><code> 02.20 ~ ing </code></td>
     </tr>    
   </tbody>
 </table>
