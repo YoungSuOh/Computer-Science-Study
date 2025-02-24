@@ -59,7 +59,7 @@ try {
 
 ## JPA 영속성 컨텍스트 (Persistence Context)
 
-![image.png](attachment:ed5cf22e-805e-4b99-b240-b5bf891f67b8:image.png)
+![image](https://github.com/user-attachments/assets/b0427134-73a7-4df6-bed1-b12b8295c24c)
 
 영속성 컨텍스트(Persistence Context)는 엔티티를 저장하고 관리하는 **메모리 공간이다**.
 
@@ -73,16 +73,19 @@ try {
 
 ### EntityManager 객체 생성과 Entity 클래스 정의
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/957f1a32-bb3a-4572-9051-b37bcdbdf2a2/image.png)
+![image (1)](https://github.com/user-attachments/assets/ea3c98cb-8909-46f8-b0b1-7db565d2c3d6)
+
 
 1. `persistence.xml` 파일을 통해서 JPA 관련 정보를 설정한다.
     1. resources의 META-INF에 추가
         
-        ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/c8614120-987d-4c81-ac7e-38ce6e368e48/image.png)
+        ![image (2)](https://github.com/user-attachments/assets/5786f28d-4cb9-408e-b0f2-d7037947a749)
+
         
     2. 영속성 컨텍스트에서 관련 SQL을 데이터베이스에 전달할 때는 데이터베이스별 Dialect(방언)을 적용한다.
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/c527f16d-243f-4ec6-bf99-ce22ae082d01/image.png)
+    ![image (3)](https://github.com/user-attachments/assets/2ecde4f7-2a86-46e2-bef3-8e96124e9e69)
+
     
     ```java
     <?xml version="1.0" encoding="UTF-8"?>
@@ -113,7 +116,8 @@ try {
     
 2. EntityManagerFactory 객체를 생성한다. ( <persistence-unit> 태그의 이름 정보 지정)
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/53a0aacc-5ad4-40a8-90c9-3ba20187a7e2/image.png)
+    ![image (4)](https://github.com/user-attachments/assets/7ff83d5b-d9e6-4cb3-846e-7b9c8f3b46a9)
+
     
 3. EntityManager 객체를 생성하여 Entity 객체를 영속성 컨텍스트를 통해 관리한다.
     
@@ -141,12 +145,14 @@ try {
     }
     ```
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/f2cb3867-c2a9-4e89-adf9-45e982f1b401/image.png)
     
+    ![image (5)](https://github.com/user-attachments/assets/ee75622b-b0a4-4cd6-b7a1-b87d36ee86ad)
+
 
 ### JPA에서 Entity의 Life Cycle (엔티티의 생명주기)
 
-![image.png](attachment:8c6da5ff-9344-4068-8c9c-ee39ea27286a:image.png)
+![image (6)](https://github.com/user-attachments/assets/2b30f557-89df-4c94-aeb8-5f126c4537ee)
+
 
 JPA에서 엔티티(Entity)는 특정 상태를 가지며, 상태에 따라 JPA가 관리하는 방식이 달라진다.
 
