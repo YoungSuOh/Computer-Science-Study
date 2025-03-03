@@ -5,7 +5,8 @@
 
 ## 스프링 MVC의 구성 요소
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/ac5cdb1a-0d00-4153-afff-d0f3531aa036/image.png)
+![image (6)](https://github.com/user-attachments/assets/ebbcf9f5-80de-4f00-b135-bd77dc9d00c0)
+
 
 1. 클라이언트 요청 (HTTP Request)
 2. DispatcherServlet이 요청을 수신
