@@ -21,30 +21,36 @@
         1. 전달인자가 2개 이상인 경우
             1. 기본데이터 타입일 경우에는 **`value`** 요소를 사용하여 의존관계를 연결시키기 위한 값을 지정
                 
-                ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/9508fb3f-6fa9-4e64-8ebc-4567259e7df6/image.png)
+                ![image](https://github.com/user-attachments/assets/2b594a77-68b9-458c-8e24-3adbf43b0231)
+
                 
         2. index 속성을 이용하여 지정
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/7ca4b534-5e1b-4061-bac0-12c7bc6e070a/image.png)
+            ![image (1)](https://github.com/user-attachments/assets/92822714-70e9-425a-93fc-c1cb7c7c742e)
+
             
         3. type 속성을 이용하여 지정
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/aa256141-6fa7-472d-8634-363940b41000/image.png)
+            ![image (2)](https://github.com/user-attachments/assets/98a973d3-5c7c-4af7-8ba1-dfda82af1c26)
+
             
         4. 객체를 전달할 경우 **`ref` 요소를 사용**
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/48073054-b923-48ca-934c-134a28c6876c/image.png)
+            ![image (3)](https://github.com/user-attachments/assets/851c9f05-681a-4b84-a565-f39d47606675)
+
             
 2. Setter 주입
     1. setter 메서드를 이용하여 의존관계를  연결시키는 것을 말한다.
     2. **`<property>요소의 name 속성`**을 이용하여 값의 의존 관계를 연결시킬 대상이 되는 필드값을 지정한다
         1. 전달인자가 2개 이상인 경우
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/07d71422-e239-4b41-8320-679e4f3f4e5b/image.png)
+            ![image (4)](https://github.com/user-attachments/assets/9e53044c-c005-470e-a4f4-d21efd77ca8d)
+
             
         2. 객체를 전달할 경우 **`ref` 요소를 사용**
             
-            ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/a20544b7-3000-49b6-a19b-db498dcd2ef3/image.png)
+            ![image (5)](https://github.com/user-attachments/assets/6e849def-3ec1-4e1a-9ef9-aad8c181108a)
+
             
             - Foo와 Bar 빈 등록을 진행
             - ref를 통해 Bar 를 받음
