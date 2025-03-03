@@ -17,12 +17,14 @@ Pointcut : 삽입되는 대상자
 
 </aside>
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/1a24de1f-06d9-405e-a0e5-67122ac9aab7/image.png)
+![image (7)](https://github.com/user-attachments/assets/8311c61c-1e64-4c29-81f6-d7e44d9a5060)
+
 
 - 중복되는 코드들은 `공통 코드,`  각각 identity 있는 코드들을 `핵심 코드`라고 한다.
 - 공통 코드들을 빼서 따로 함수로 잡아서 원래 있던 함수들에 삽입을 한다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/2104910f-8dd1-4fb9-a972-b1f72860fbb9/image.png)
+![image (8)](https://github.com/user-attachments/assets/ebe4d163-eaf7-4a5f-94e7-bcf104f8ae82)
+
 
 1. Target
     1. 함수들을 가지고 있는 클래스
