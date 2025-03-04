@@ -53,7 +53,8 @@
     - 이렇게 되면 추상 클래스가 아닌 구체 클래스에 의존하므로 DIP 위반이다. 또한 변경에는 닫혀 있지 않기 때문에 OCP도 위반했다고 볼 수 있다.
     - 현재 의존 관계
         
-        ![스크린샷(245).png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/864173fa-c521-4af8-8790-194140b140f9/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7(245).png)
+        ![스크린샷(245)](https://github.com/user-attachments/assets/32c813e0-1ce3-4f9b-82bd-eba9e6902798)
+
         
 
 - 해결 방법 → AppConfig (외부 설정 파일)
@@ -88,8 +89,9 @@
     - 이렇게 되면 Service는 변경할 필요 없이 `discountPolicy()` 부분만 변경해줘서 정책을 바꿔주면 된다.
     - 전체적인 구조
         
-        ![스크린샷(249).png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c90871f-462d-4f71-a192-56327a9e079c/bf4263cf-1385-4d10-a15f-22bf693038c5/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7(249).png)
         
+        ![스크린샷(249)](https://github.com/user-attachments/assets/b9018d29-9e12-4fc5-ab6f-a3a9300cf962)
+
 
 ## 의존성 주입 방법
 
