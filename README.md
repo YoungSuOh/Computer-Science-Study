@@ -67,8 +67,8 @@
     <tr>
       <td>FrameWork</td>
       <td>Spring Boot</td>
-      <td><code>진행중</code></td>
-      <td><code> 02.20 ~ ing </code></td>
+      <td><code>완료</code></td>
+      <td><code> 02.20 ~ 03.05 </code></td>
     </tr>    
   </tbody>
 </table>
@@ -85,6 +85,12 @@
     </tr>
   </thead>
   <tbody>
+     <tr>
+      <td>Hi-Buddy</td>
+      <td>인하대 캡스톤 디자인 프로젝트</td>
+      <td><code>미진행</code></td>
+      <td><code>-</code></td>
+    </tr>
     <tr>
       <td>Dr.Rate</td>
       <td>네이버 클라우드 캠프 최종 프로젝트</td>
