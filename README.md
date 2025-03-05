@@ -88,8 +88,8 @@
      <tr>
       <td>Hi-Buddy</td>
       <td>인하대 캡스톤 디자인 프로젝트</td>
-      <td><code>미진행</code></td>
-      <td><code>-</code></td>
+      <td><code>진행중</code></td>
+      <td><code>03.05 ~ ing</code></td>
     </tr>
     <tr>
       <td>Dr.Rate</td>
