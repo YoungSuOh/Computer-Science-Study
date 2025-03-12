@@ -72,30 +72,3 @@
     </tr>    
   </tbody>
 </table>
-
-
-### Project
-<table>
-  <thead>
-    <tr>
-      <th>프로젝트명</th>
-      <th>설명</th>
-      <th>진행 상황</th>
-      <th>기간</th>
-    </tr>
-  </thead>
-  <tbody>
-     <tr>
-      <td>Hi-Buddy</td>
-      <td>인하대 캡스톤 디자인 프로젝트</td>
-      <td><code>진행중</code></td>
-      <td><code>03.05 ~ ing</code></td>
-    </tr>
-    <tr>
-      <td>Dr.Rate</td>
-      <td>네이버 클라우드 캠프 최종 프로젝트</td>
-      <td><code>미진행</code></td>
-      <td><code>-</code></td>
-    </tr>    
-  </tbody>
-</table>
